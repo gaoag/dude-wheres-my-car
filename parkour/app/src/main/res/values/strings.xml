@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">PARKour</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="parkour">PARKour</string>
+    <string name="permit_prompt">Pick your permit…</string>
+
+
+    <string-array name="permit_array">
+        <item>Select Your Permit</item>
+        <item>Permit A</item>
+        <item>Permit B</item>
+        <item>Permit C</item>
+        <item>Permit D</item>
+        <item>Permit E</item>
+    </string-array>
+
+
+    <string-array name="numbers">
+        <item>Select</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:background="#2F80ED"
+            android:cropToPadding="false"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/alarm_add" />
+
+        <Button
+            android:id="@+id/None"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2F80ED"
+            android:text="None"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/twohr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2F80ED"
+            android:text="2 Hours"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/fourhr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2F80ED"
+            android:text="4 Hours"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/sixhr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2F80ED"
+            android:text="6 Hours"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

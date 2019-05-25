@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.parkour.MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        map:layout_constraintBottom_toTopOf="@+id/frameForButtons"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.0"
+        tools:context=".MapsActivity"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageButton
+        android:id="@+id/upButton"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="56dp"
+
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:onClick="moveUp"
+        android:src="@drawable/arrowicon"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/rightButton"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="100dp"
+
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        android:onClick="moveRight"
+        android:src="@drawable/arrowicon"
+        android:rotation="90"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/downButton"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="56dp"
+
+        android:layout_marginTop="104dp"
+        android:background="@android:color/transparent"
+        android:onClick="moveDown"
+        android:src="@drawable/arrowicon"
+        android:rotation="180"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/leftButton"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        android:onClick="moveLeft"
+        android:src="@drawable/arrowicon"
+        android:rotation="270"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/rounded_park_button"
+        android:onClick="onParkButtonClick"
+
+        android:text="Park my car !"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp"
+        map:layout_constraintBottom_toBottomOf="@+id/map"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameForButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameForTimers"
+        android:layout_width="266dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/rounded_frame_layout"
+        android:visibility="invisible"
+        map:layout_constraintBottom_toBottomOf="@+id/frameForButtons"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.496"
+        map:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
